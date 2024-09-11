@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #252525;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; 
+    height: auto;
+    margin-right: 15px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    flex-grow: 1;
+}
+
+video {
+    width: 100%;
+    max-height: 400px;
+}
+
+.previews {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.preview-container {
+    width: 150px;
+    height: 100px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.preview-container:hover {
+    border-color: #FF3797;
+}
+
+.preview {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* Responsive Styles */
+@media (min-width: 768px) {    
+    h1 {
+        font-size: 24px; /* Larger font size for headers */
+    }
+
+    .video-container {
+        max-width: 800px; /* Larger max-width for video container */
+    }
+
+    video {
+        max-height: 600px; /* Larger video height */
+    }
+
+    .previews {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .preview-container {
+        width: 200px; /* Larger preview containers */
+        height: 120px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    header, footer {
+        padding: 20px 40px; /* More padding for larger screens */
+    }
+
+    .video-container {
+        margin: 40px auto; /* More vertical spacing */
+        max-width: 1200px;
+    }
+
+    .preview-container {
+        width: 250px; /* Even larger preview containers */
+        height: 150px;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stream Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://player.live-video.net/1.31.0/amazon-ivs-player.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.webp" class="logo"> <!-- Replace 'logo.png' with your logo file -->
+            <h1>Live Stream Player</h1>
+        </div>
+    </header>
+    <div class="video-container">
+        <video id="player1" class="video-player" controls playsinline></video>
+        <video id="player2" class="video-player" style="display: none;" controls playsinline></video>
+    </div>
+    <div id="previews" class="previews">
+        <div class="preview-container" data-stream="output1">
+            <video id="preview1" class="preview" playsinline muted></video>
+        </div>
+        <div class="preview-container" data-stream="output2">
+            <video id="preview2" class="preview" playsinline muted></video>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Auki. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
